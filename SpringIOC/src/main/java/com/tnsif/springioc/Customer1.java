@@ -5,15 +5,13 @@ import org.springframework.stereotype.Component;
 @Component
 public class Customer1 {
 
-    private final Customer2 customer2;
 	private int id;
 	private String name;
 	private String city;
 	
-	public Customer1(Customer2 customer2) //default constructor
+	public Customer1()  //default constructor
 	{
 		System.out.println("Welcome Customer1");
-		this.customer2 = customer2;
 	}
 	
 	public void order()
